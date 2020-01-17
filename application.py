@@ -1,6 +1,7 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 
+# The procedure that will run the application.
 def run_application():
     print("Generating a food report for spaghetti bolognese")
     print("----------------------------------------------------------")
@@ -55,6 +56,7 @@ def run_application():
 
     print("")
 
+    # This query will get all the nutrition values for the entire recipe.
     query3 = """
     PREFIX ontology: <http://www.foodreport.be/ontology#>
     PREFIX data: <http://www.foodreport.be/data#>
